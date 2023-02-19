@@ -1,0 +1,61 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin-bottom: 0.3rem;
+}
+
+.article-section{
+    padding: 1rem;
+}
+
+/* Css Variables */
+:root{
+    --color-hue:218;
+    --color-primary:hsl(var(--color-hue),49%,43%);
+    --color-primary-light:hsl(var(--color-hue),49%,50%);
+    --color-body:hsl(var(--color-hue),49%,96%);
+    --color-text:hsl(var(--color-hue),20%,20%);
+}
+
+.dark-mode{
+    --color-primary:hsl(var(--color-hue),49%,48%);
+    --color-primary-light:hsl(var(--color-hue),49%,50%);
+    --color-body:hsl(var(--color-hue),49%,10%);
+    --color-text:hsl(var(--color-hue),20%,90%);
+}
+
+/* *************** */
+
+p{
+    margin-bottom: 0.25rem;
+    font-size: 1.5rem;
+    color: var(--color-text);
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--color-body);
+}
+
+.toggle_theme_btn{
+    margin-top: 0.4rem;
+    padding: 1rem 1.5rem;
+    font-size: 2rem;
+    color: #fff;
+    background-color: var(--color-primary);
+    outline: none;
+    border: none;
+    cursor:pointer;
+}
+.toggle_theme_btn:hover{
+    background-color: var(--color-primary-light);
+}
+
+h2{
+    color: var(--color-primary);
+    font-size: 3rem;
+}
